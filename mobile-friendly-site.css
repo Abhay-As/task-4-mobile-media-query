@@ -1,0 +1,54 @@
+body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+img{
+    max-width: 769px;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    /* Reduce font size for smaller screens */
+    h1, h2, h3 {
+        font-size: smaller;
+    }
+
+    /* Ensure images scale properly */
+    img {
+        max-width: 40%;
+        height: auto;
+    }
+}
